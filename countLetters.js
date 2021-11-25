@@ -22,9 +22,9 @@ const countLetters = (string) => {
   return countResults;
 };
 
-console.log(countLetters("Y E Z U U S"));
-console.log(countLetters("lighthouse in the house"));
-console.log(countLetters("   "));
+console.log(countLetters("Y E Z U U S")); // should pass
+console.log(countLetters("lighthouse in the house")); // should pass
+console.log(countLetters("   ")); // should pass
 
-console.log(assertEqual((countLetters("YEZUUS"))["U"], 2));
-console.log(assertEqual((countLetters("LHL"))["H"], 1));
+console.log(assertEqual((countLetters("YEZUUS"))["U"], 3)); // should fail
+console.log(assertEqual((countLetters("LHL"))["H"], 1)); // should pass

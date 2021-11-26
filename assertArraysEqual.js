@@ -21,34 +21,3 @@ const assertArraysEqual = (arr1, arr2) => {
 assertArraysEqual([1, 2, 3, 4], [1, 2, 3, 4]); // => Assertion Passed
 assertArraysEqual(['1', '2', '3',], [1, 2]); // => Assertion Failed
 assertArraysEqual([1, 2, 3], [1, 2, 3]); // => should PASS
-
-// assertArraysEqual - UNSURE WHY the if statment dosen't require a === true. Does exsistence of
-/*
-const assertArraysEqual = (arr1, arr2) => {
-  if (eqArrays(arr1, arr2)) return console.log(`✅✅✅ Assertion Passed: ${arr1} === ${arr2}`);
-  else return console.log(`🛑🛑🛑 Assertion Failed: ${arr1} !== ${arr2}`);
-};
-*/
-
-// More convuluted answers - REQUIRES CLEANUP
-
-/*
-const assertArraysEqual = (arrayOne, arrayTwo) => {
-  console.log(eqArrays(arrayOne, arrayTwo) === true ? "✅" : "🛑");
-};
-
-const eqArrays = function(arrayOne, arrayTwo) {
-  let check = true;
-  if (arrayOne.length !== arrayTwo.length) {
-    return false;
-  }
-  
-  for (let i = 0; i < arrayOne.length; i++) {
-    arrayOne[i] === arrayTwo[i] ? check = true : check = false;
-    if (check === false) {
-      return false;
-    }
-  }
-  return check;
-};
-*/

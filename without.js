@@ -36,5 +36,5 @@ assertArraysEqual((without(words, ["lighthouse"])), [ 'hello', 'world' ]); // =>
 
 assertArraysEqual((without([1, 2, 3], [1, 3])), [2, 3]); // => Assertion Failed
 assertArraysEqual((without(["1", "2", "3"], [1, 2, "3"])), ["1", "2"]); // => Assertion Passed
- 
+
 assertArraysEqual((without([1, 2, 3, 4], [1, 4])), [2, 3]); // => Assertion Passed

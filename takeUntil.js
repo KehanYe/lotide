@@ -12,7 +12,7 @@ const takeUntil = function(array, callback) {
     } else {
       return results;
     }
-  } console.log("hello");
+  } 
   return results;
 };
 

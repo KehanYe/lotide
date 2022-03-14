@@ -3,10 +3,10 @@
 // Output: truth or false into assertEqaul
 
 
-const eqArrays = (arr1, arr2) => {
-  if (arr1.length !== arr2.length) return false;   // check for array length
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] === arr2[i]) { // check for individual elements, one loop that applies to both array
+const eqArrays = (actual, expected) => {
+  if (actual.length !== expected.length) return false;   // check for array length
+  for (let i = 0; i < actual.length; i++) {
+    if (actual[i] === expected[i]) { // check for individual elements, one loop that applies to both array
       continue; // keep checking through loop
     } else {
       return false;
